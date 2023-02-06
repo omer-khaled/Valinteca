@@ -1,0 +1,63 @@
+@use './shardcomponent';
+.welcom{
+    @extend %shard-main-div;
+    .img-container{   
+        @extend %shard-main-img;  
+        width: 450px;
+        height: 315px;    
+        background-image: url("../Assets/Welcom-image.png");
+    }
+    .info{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        color: var(--main-color);
+        h3{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 120%;
+            margin: 0;
+        }
+        p{
+            margin: 25px 0 25px 0;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 160%;
+            color: #1F1249;
+        }
+        button{
+            @extend %shard-main-button;
+        }
+    }
+    @media (max-width:767px) {
+        .info{
+            width: 450px;
+            margin-top: 10px;
+            align-items: center;
+            button{
+                width: 450px;
+            }
+        }
+    }
+
+}
+@media (max-width:460px) {
+    .welcom{
+        .info{
+            width: 100%;
+            margin-top: 10px;
+            align-items: center;
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 16px;
+            }
+            button{
+                width: 90%;
+            }
+        }
+    }
+}

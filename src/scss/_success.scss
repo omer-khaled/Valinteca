@@ -1,0 +1,31 @@
+@use './shardcomponent';
+.succes{
+    @extend %shard-main-div;
+    .img-container{   
+        @extend %shard-main-img;  
+        width: 450px;
+        height: 456px; 
+        background-image: url("../Assets/looged-image.jpg");
+    }
+    .info{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        color: var(--main-color);
+        h3{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 120%;
+            margin: 0;
+        }
+        p{
+            margin: 25px 0 25px 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: #1F1249;
+        }
+    }
+}

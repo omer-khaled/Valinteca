@@ -1,0 +1,23 @@
+@use './welcom';
+@use './signup';
+@use './success';
+body,*{
+    padding: 0;
+    margin: 0;
+    // Abdoullah Ashgar EL-kharef
+    font-family:Arial, Helvetica, sans-serif;
+}
+.App{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../Assets/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+:root{
+    --main-color:#2D2D2D;
+}
